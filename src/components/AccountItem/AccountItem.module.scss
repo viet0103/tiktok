@@ -1,0 +1,44 @@
+.wrapper {
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+    display: flex;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+
+.account-avatar{
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    justify-content: center;
+    
+}
+
+.account-name{
+    flex: 1;
+    .icon {
+        margin-left: 2.75px;
+        color: rgb(34, 196, 196);
+       transform: translateY(1px);
+    }
+    display: flex;
+    align-items: baseline;
+}
+
+.account-desc{
+    flex: 1;
+}
+
+

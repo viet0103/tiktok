@@ -3,7 +3,9 @@
 
 :root {
     --primary: #fe2c55;
-
+    --black: #000;
+    --white-text: #fff;
+    --black-text: #333;
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
 }
@@ -23,4 +25,19 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button, input, [tabindex] {
+    outline: none;
+    border: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a[href] {
+    color: var(--white-text);
+    text-decoration: none;
+    
 }
