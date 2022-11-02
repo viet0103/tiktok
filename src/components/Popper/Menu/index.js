@@ -2,10 +2,10 @@ import MenuItem from './MenuItem';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import { useState } from 'react';
-import Tippy from '@tippyjs/react';
+import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import {Wrapper as PopperWrapper} from '~/components/Popper';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 
 const cx = classNames.bind(styles);
 function Menu({ items, children }) {
@@ -16,9 +16,9 @@ function Menu({ items, children }) {
             return (
                 <span>
                     <MenuItem
-                        key={index}
+                        
                         className={cx('menu-item', {
-                            separate: item.separate
+                            separate: item.separate,
                         })}
                         icon={item.icon}
                         name={item.name}
@@ -32,18 +32,18 @@ function Menu({ items, children }) {
         });
     };
     const resetMenu = (attr) => {
-        setMenu((prev) => prev.slice(0, 1))
-        
-    }
+        setMenu((prev) => prev.slice(0, 1));
+    };
     return (
         <Tippy
+            
             hideOnClick={false}
-            animation={false}
             delay={[100, 200]}
             onHide={resetMenu}
             placement="bottom-end"
+            interactive={true}
             render={(attr) => (
-                <PopperWrapper className={cx('menu-popper')} >
+                <PopperWrapper className={cx('menu-popper')}  >
                     <div className={cx('menu-list')}>
                         {menu.length > 1 && (
                             <header className={cx('header')}>
@@ -61,7 +61,6 @@ function Menu({ items, children }) {
                     </div>
                 </PopperWrapper>
             )}
-            interactive={true}
         >
             {children}
         </Tippy>
