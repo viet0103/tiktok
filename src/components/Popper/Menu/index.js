@@ -6,6 +6,7 @@ import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
+import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
 function Menu({ items, children }) {
@@ -14,7 +15,7 @@ function Menu({ items, children }) {
         return items[items.length - 1].data.map((item, index) => {
             const isParent = !!item.children;
             return (
-                <span>
+                <span className={cx('menu-item-wrapper')} key={index}>
                     <MenuItem
                         
                         className={cx('menu-item', {
@@ -44,7 +45,7 @@ function Menu({ items, children }) {
             interactive={true}
             render={(attr) => (
                 <PopperWrapper className={cx('menu-popper')}  >
-                    <div className={cx('menu-list')}>
+                    
                         {menu.length > 1 && (
                             <header className={cx('header')}>
                                 <button
@@ -57,14 +58,20 @@ function Menu({ items, children }) {
                                 <div className={cx('menu-title')}>{menu[menu.length - 1].title}</div>
                             </header>
                         )}
+                        <div className={cx('menu-item-body')}>
                         {render(menu)}
-                    </div>
+                        </div>
+                   
                 </PopperWrapper>
             )}
         >
             {children}
         </Tippy>
     );
+}
+Menu.propTypes ={
+    items: PropTypes.array.isRequired,
+    children: PropTypes.node
 }
 
 export default Menu;

@@ -1,6 +1,12 @@
 .wrapper {
     width: 100%;
     height: var(--default-layout-header-height);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0px 1px 1px rgb(0, 0, 0, 0.12);
     display: flex;
     justify-content: center;

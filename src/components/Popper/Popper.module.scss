@@ -1,13 +1,17 @@
 .wrapper {
     position: relative;
-    min-width: 223px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgb(0 0 0/ 0.12) 0px 2px 12px;
-    border-radius: 8px;
     max-height: min((100vh - 96px) - 60px, 734px);
-    overflow: hidden;
+    min-height: 100px;
+    min-width: 232px;
+    padding-top: 8px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
 }
+
 .endArrow::before {
     content: '';
     position: absolute;

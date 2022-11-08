@@ -8,9 +8,11 @@
     &.separate {
         border-top: 1px solid #ccc;
     }
+   
 }
 
 .header {
+    margin-top: -8px;
     height: 50px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     display: flex;
@@ -21,12 +23,21 @@
     }
 }
 .menu-list {
+    
+}
+.menu-item-wrapper {
+    display: block;
     overflow: hidden;
+}
+.menu-item-body {
+    overflow-y: auto;
+   
 }
 .button {
     border-radius: 0;
 }
 .icon {
+
     font-size: 1.6rem;
    padding: 16px 16px;
    cursor: pointer;

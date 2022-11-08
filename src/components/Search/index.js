@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import { useDebounce } from '~/hooks';
-import * as searchServices from '~/apiServices/searchServices';
+import * as searchServices from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 function Search() {
@@ -44,51 +44,51 @@ function Search() {
     }, [debounce]);
 
     return (
-        <HeadLessTippy
-            onClickOutside={() => setShowMenu(false)}
-            visible={showMenu && account.length > 0}
-            render={(attr) => (
-                <div className={cx('search-result')}>
-                    <PopperWrapper>
-                        <h4 className={cx('search-title')}>Accounts</h4>
-                        {account.map((ac) => (
-                            <AccountItem data={ac} onClick={handleClick} />
-                        ))}
+        <div>
+            <HeadLessTippy
+                onClickOutside={() => setShowMenu(false)}
+                visible={showMenu && account.length > 0}
+                render={(attr) => (
+                    <div className={cx('search-result')}>
+                        <PopperWrapper>
+                            <h4 className={cx('search-title')}>Accounts</h4>
+                            {account.map((ac, index) => (
+                                <AccountItem data={ac} onClick={handleClick} key={index}/>
+                            ))}
+                            
+                        </PopperWrapper>
+                    </div>
+                )}
+                interactive={true}
+               
+            >
+                <div className={cx('search')}>
+                    <input ref={inputRef} value={searchValue} className={cx('input')} placeholder="Search accounts and videos" spellCheck={false} onChange={(e) => {
                         
-                    </PopperWrapper>
-                </div>
-            )}
-            interactive={true}
-           
-        >
-            <div className={cx('search')}>
-                <input ref={inputRef} value={searchValue} className={cx('input')} placeholder="Search accounts and videos" spellCheck={false} onChange={(e) => {
+                        if (!e.target.value.startsWith(' ')) {
+                            setSearchValue(e.target.value)
+                        }
+                    }} onFocus={() => setShowMenu(true)}/>
                     
-                    if (e.target.value.startsWith(' ')) {
-                        setSearchValue(e.target.value.trim())
-                    } else {
-                        setSearchValue(e.target.value)
-                    }
-                }} onFocus={() => setShowMenu(true)}/>
-                
-                {
-                    !!searchValue.trim() && !loading &&
-                <button className={cx('clear-btn')} onClick={handleClearClick}>
-                    <FontAwesomeIcon icon={faCircleXmark} />
-                </button>
-                }
-                
-                {
-                    loading && 
-                    <button className={cx('loading')}>
-                        <FontAwesomeIcon  icon={faSpinner} />
+                    {
+                        !!searchValue.trim() && !loading &&
+                    <button className={cx('clear-btn')} onClick={handleClearClick}>
+                        <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
-                }
-                <button className={cx('search-btn')}>
-                    <SearchIcon />
-                </button>
-            </div>
-        </HeadLessTippy>
+                    }
+                    
+                    {
+                        loading && 
+                        <button className={cx('loading')}>
+                            <FontAwesomeIcon  icon={faSpinner} />
+                        </button>
+                    }
+                    <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
+                        <SearchIcon />
+                    </button>
+                </div>
+            </HeadLessTippy>
+        </div>
     );
 }
 

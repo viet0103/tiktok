@@ -1,3 +1,5 @@
+
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
@@ -41,7 +43,7 @@ function Button({
         props.href = href;
         Comp = 'a';
     }
-  
+    
     return (
         <Comp
             
@@ -54,11 +56,13 @@ function Button({
                 disabled,
                 noneOutline
             })}
+           
 
             onClick={onClick}
 
             {...props}
         >
+            
             {LeftIcon && <div className={cx('leftIcon')}>
                 <LeftIcon className={cx('leftIcon')} />
             </div>}
@@ -68,6 +72,27 @@ function Button({
             </div >}
         </Comp>
     );
+}
+
+Button.propTypes = {
+    primary: PropTypes.bool,
+    outline: PropTypes.bool,
+    small: PropTypes.bool,
+    large: PropTypes.bool,
+    disabled: PropTypes.bool,
+    rounded: PropTypes.bool,
+    noneOutline: PropTypes.bool,
+    children: PropTypes.node.isRequired,
+    leftIcon: PropTypes.oneOfType([
+        PropTypes.node, PropTypes.elementType
+    ]),
+    rightIcon: PropTypes.oneOfType([
+        PropTypes.node, PropTypes.elementType
+    ]),
+    className: PropTypes.string,
+    to: PropTypes.string,
+    href: PropTypes.string,
+    onClick: PropTypes.func,
 }
 
 export default Button;
