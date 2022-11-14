@@ -1,0 +1,38 @@
+.wrapper {
+    border-bottom: 1px solid #f1f1f2;
+}
+
+.header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(24, 24, 35, 0.75);
+    padding-left: 16px;
+    margin: 15px 0 3px 0;
+}
+
+.body {
+    max-height: 265px;
+    overflow: hidden;
+    &.show {
+        max-height: none;
+    }
+}
+
+.account {
+
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.04);
+    }
+}
+
+.show-btn {
+    color: var(--primary);
+    font-size: 1.4rem;
+    padding-left: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 6px 0 10px 0;
+    user-select: none;
+}

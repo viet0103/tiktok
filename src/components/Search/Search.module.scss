@@ -36,10 +36,12 @@
 .input:not(:placeholder-shown) ~ .search-btn {
     color: var(--black-text);
 }
-
+.red {
+    border: 2px solid red;
+} 
 .clear-btn,
 .loading {
-    margin-right: 16px;
+    margin: 0 16px;
     cursor: pointer;
     color: #a7a7ab;
     font-size: 1.5rem;

@@ -1,4 +1,86 @@
 .wrapper {
-    width: 356px;
+    position: fixed;
+    top: 60px;
+    bottom: 10px;
+    width: 340px;
+    padding: 20px 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    animation: fadeOut 0.5s ease-in-out forwards;
+    &::-webkit-scrollbar {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--var1)
+    }
     
+    &:hover {
+        animation: fadeIn .5s ease-in-out forwards;
+    }
+    
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #f1f1f2;
+        .menu-item {
+            margin: 0;
+            height: 48px;
+            border-radius: 3px;
+            justify-content: flex-start;
+            transition: background-color ease-in-out 200ms;
+            &:hover {
+                background-color: rgba(22, 24, 35, 0.03);
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+        .active * {
+            color: var(--primary);
+        }
+        .active {
+            .menu-item {
+                display: none;
+            }
+            .active-icon {
+                display: flex;
+            }
+            
+        }
+        .active-icon {
+            display: none;
+        }
+    }
 }
+
+@property --var1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      --var1: transparent;
+    }
+  
+    100% {
+      --var1: rgba(0,0,0,0.15);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      --var1: rgba(0,0,0,0.15);
+    }
+  
+    100% {
+      --var1: transparent;
+    }
+  }
+
+

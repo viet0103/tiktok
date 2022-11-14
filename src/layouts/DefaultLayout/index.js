@@ -5,12 +5,12 @@ import SideBar from '~/components/SideBar';
 
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children }) {
+function DefaultLayout({ children, isSignIn}) {
     return (
         <div className={cx('wrapper')}>
-            <Header className={cx('header')} />
+            <Header className={cx('header')} isSignIn={isSignIn} />
             <div className={cx('container')}>
-                <SideBar />
+               <SideBar isSignIn/>
                 <div className={cx('content')}>{children}</div>
             </div>
         </div>

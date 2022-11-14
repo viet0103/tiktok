@@ -1,50 +1,57 @@
 .wrapper {
     cursor: pointer;
-   
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.06);
-    }
     display: flex;
     font-size: 1.2rem;
     padding: 9px 16px 8px 16px;
     align-items: center;
-    .account-avatar{
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        object-fit: cover;
-    
+    &.defaultHover {
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.06);
+        }
+    }
+    &.smallSize {
+        .account-avatar {
+            width: 32px;
+            height: 32px;
+        }
+        .account-name {
+            font-weight: 700;
+            transform: translateY(1.5px);
+            
+        }
+        .account-desc {
+            font-size: 1.2rem;
+        }
     }
 }
 
-
-
-
-.body{
+.body {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 12px;
     justify-content: center;
+}
+.account-name {
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    line-height: 22px;
+    .icon {
+        width: 14px;
+        height: 14px;
+        margin-left: 3px;
+        color: rgb(34, 196, 196);
+        transform: translateY(1px);
+    }
     
 }
 
-.account-name{
+.account-desc {
     flex: 1;
     font-size: 1.4rem;
-    font-weight: 600;
-    .icon {
-        margin-left: 2.75px;
-        color: rgb(34, 196, 196);
-       transform: translateY(1px);
-    }
-    display: flex;
-    align-items: baseline;
+    line-height: 15px;
 }
-
-.account-desc{
-    flex: 1;
-    font-size: 1.3rem;
-}
-
 
