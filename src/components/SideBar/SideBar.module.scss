@@ -13,14 +13,13 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: var(--var1)
+        background: var(--var1);
     }
-    
+
     &:hover {
-        animation: fadeIn .5s ease-in-out forwards;
+        animation: fadeIn 0.5s ease-in-out forwards;
     }
-    
-    
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -49,7 +48,6 @@
             .active-icon {
                 display: flex;
             }
-            
         }
         .active-icon {
             display: none;
@@ -57,30 +55,66 @@
     }
 }
 
+.menu-link {
+    display: flex;
+}
+.menu-item {
+    flex: 1;
+}
+
+.sidebar-footer {
+    margin-top: 12px;
+    padding-left: 16px;
+}
+
+.footer-content-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    .footer-content-item {
+        margin: 6px 6px 0 0;
+        color: rgba(22, 24, 35, 0.5);
+        line-height: 17px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer-content-coppyright {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 6px 6px 8px 0;
+    color: rgba(22, 24, 35, 0.5);
+    line-height: 17px;
+}
+
 @property --var1 {
-    syntax: "<color>";
+    syntax: '<color>';
     inherits: true;
     initial-value: transparent;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      --var1: transparent;
-    }
-  
-    100% {
-      --var1: rgba(0,0,0,0.15);
-    }
-  }
-  
-  @keyframes fadeOut {
-    0% {
-      --var1: rgba(0,0,0,0.15);
-    }
-  
-    100% {
-      --var1: transparent;
-    }
-  }
+}
 
+@keyframes fadeIn {
+    0% {
+        --var1: transparent;
+    }
 
+    100% {
+        --var1: rgba(0, 0, 0, 0.15);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        --var1: rgba(0, 0, 0, 0.15);
+    }
+
+    100% {
+        --var1: transparent;
+    }
+}

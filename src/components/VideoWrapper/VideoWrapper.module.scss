@@ -1,0 +1,184 @@
+.wrapper {
+    max-width: 692px;
+    padding: 24px 0;
+    margin: 0 50px;
+    border-bottom: 1px solid #e9e9eb;
+    .video-info {
+        .preview-wrpaper {
+            width: 320px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+            border-radius: 8px;
+            cursor: default;
+        }
+        
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .preview-btn {
+            margin-right: 0px;
+        }
+        
+        
+        .preview-body {
+            margin-top: 12px;
+            border-bottom: 1px solid rgba(24, 24, 35, 0.15);
+        }
+        
+        .preview-nickname {
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 24px;
+        }
+        
+        .preview-fullname {
+        
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 20px;
+            margin-top: 1px;
+        }
+        
+        .preview-hot {
+            display: inline-block;
+            font-size: 1.7rem;
+            line-height: 20px;
+            margin-top: 12px;
+            margin-bottom: 15px;
+            
+        }
+        
+        .num-follow, .num-like  {
+            font-weight: 700;
+            margin-right: 6px;
+        }
+        
+        .follow,.like {
+            color: rgba(22, 24, 35, 0.75);
+        }
+        .follow {
+            margin-right: 12px;
+        }
+        .preview-footer {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 12px;
+            color: rgba(22, 24, 35, 1);
+        }
+        display: flex;
+        justify-content: space-between;
+        .user-avatar {
+            width: 56px;
+            height: 56px;
+        }
+        .user-info-text {
+            flex: 1;
+            margin-left: 14px;
+            margin-top: 5px;
+
+            .user-name {
+                display: flex;
+                align-items: center;
+            }
+            .user-nickname {
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 25px;
+                margin-right: 3px;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                
+            }
+
+
+            .user-fullname {
+                font-weight: 400;
+                font-size: 1.4rem;
+               cursor: default;
+            }
+
+            .video-des {
+                
+               
+            }
+
+            .video-music {
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+               
+                .video-music-src {
+                    margin-left: 3px;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            
+        }
+    }
+    .btn { 
+        margin-top: 10px;
+    }
+
+    .video {
+        
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+
+    .social-list {
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .social-item + .social-item {
+            margin-top: 10px;
+        }
+        .social-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(22, 24, 35, .06);
+
+        }
+        .social-quantity {
+            font-weight: 700;
+            margin-top: 2px;
+        }
+       
+    }
+}
+
+
+
+

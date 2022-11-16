@@ -18,12 +18,68 @@
     }
 }
 
+.preview-wrpaper {
+    width: 320px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview-btn {
+    margin-right: 0px;
+}
+
+
+.preview-body {
+    margin-top: 12px;
+}
+
+.preview-nickname {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 24px;
+}
+
+.preview-fullname {
+
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-top: 1px;
+}
+
+.preview-hot {
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.num-follow, .num-like  {
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+
+.follow {
+    margin-right: 12px;
+}
+
+
 .account {
-
     transition: background-color .3s ease-in-out;
-
+    border-radius: 3px;
+    overflow: hidden;
     &:hover {
-        background-color: rgba(22, 24, 35, 0.04);
+        background-color: rgba(22, 24, 35, 0.03);
     }
 }
 

@@ -9,6 +9,9 @@
             background-color: rgba(0, 0, 0, 0.06);
         }
     }
+    &.displayColumn {
+        flex-direction: column;
+    }
     &.smallSize {
         .account-avatar {
             width: 32px;

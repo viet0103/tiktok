@@ -1,17 +1,15 @@
 import * as httpRequest from '~/utils/httpRequest';
 
-export const suggestAccounts = async (page=1, perPage = 5) => {
+export const video = async (type='for-you', page=1) => {
     try {
-        const res = await httpRequest.get('users/suggested', {
+        const res = await httpRequest.get('videos', {
             params: {
-                page,
-                per_page: perPage
+                type,
+                page
             }
         })
-        
         return res.data;
     } catch (error) {
         console.log(error);
     }
 }
-

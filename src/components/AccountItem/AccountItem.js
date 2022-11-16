@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
-function AccountItem({ data, smallSize, bigSize, onClick , defaultHover}) {
+function AccountItem({ data, smallSize, bigSize, onClick , defaultHover, displayColumn}) {
     return (
-        <Link to={`/@${data.nickname}`} className={cx('wrapper', { smallSize, bigSize, defaultHover })} onClick={onClick}>
+        <Link to={`/@${data.nickname}`} className={cx('wrapper', { smallSize, bigSize, defaultHover, displayColumn })} onClick={onClick}>
             <Image src={data.avatar} alt={data.full_name} className={cx('account-avatar')} />
             <div className={cx('body')}>
                     <div className={cx('account-name')}>

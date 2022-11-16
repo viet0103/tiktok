@@ -5,7 +5,7 @@ import { publicRoutes } from '~/routes';
 import { DefaultLayout } from '~/layouts';
 
 function App() {
-    let isSignIn = false;
+    let isSignIn = true;
     return (
         <Router>
             <div className="App">

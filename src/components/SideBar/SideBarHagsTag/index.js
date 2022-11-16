@@ -1,1 +1,1 @@
-export {default} from './SideBarAccounts';
+export {default} from './SideBarHagsTag';

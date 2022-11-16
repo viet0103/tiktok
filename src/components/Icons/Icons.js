@@ -178,11 +178,11 @@ export const LiveActiveIcon = ({ width = '3.2rem', height = '3.2rem', className 
     </svg>
 );
 
-export const LanguageIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const LanguageIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -195,11 +195,11 @@ export const LanguageIcon = ({ width = '3.2rem', height = '3.2rem', className })
     </svg>
 );
 
-export const FeedbackIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const FeedbackIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -212,11 +212,11 @@ export const FeedbackIcon = ({ width = '3.2rem', height = '3.2rem', className })
     </svg>
 );
 
-export const KeyboardIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const KeyboardIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -229,11 +229,11 @@ export const KeyboardIcon = ({ width = '3.2rem', height = '3.2rem', className })
     </svg>
 );
 
-export const CoinIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const CoinIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 20 20"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -251,11 +251,11 @@ export const CoinIcon = ({ width = '3.2rem', height = '3.2rem', className }) => 
     </svg>
 );
 
-export const SettingIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const SettingIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -268,11 +268,11 @@ export const SettingIcon = ({ width = '3.2rem', height = '3.2rem', className }) 
     </svg>
 );
 
-export const SignOutIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const SignOutIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -285,11 +285,11 @@ export const SignOutIcon = ({ width = '3.2rem', height = '3.2rem', className }) 
     </svg>
 );
 
-export const Plus = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const Plus = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="tiktok-qeydvm-StyledPlusIcon e18d3d944"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 16 16"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -302,11 +302,11 @@ export const Plus = ({ width = '3.2rem', height = '3.2rem', className }) => (
     </svg>
 );
 
-export const UserPersonal = ({ width = '3.2rem', height = '3.2rem', className }) => (
+export const UserPersonal = ({ width = '2rem', height = '2rem', className }) => (
     <svg
-        className="css-g0144v"
-        width="1em"
-        height="1em"
+        className={className}
+        width={width}
+        height={height}
         viewBox="0 0 48 48"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -315,6 +315,72 @@ export const UserPersonal = ({ width = '3.2rem', height = '3.2rem', className })
             fillRule="evenodd"
             clipRule="evenodd"
             d="M24.0003 7C20.1343 7 17.0003 10.134 17.0003 14C17.0003 17.866 20.1343 21 24.0003 21C27.8663 21 31.0003 17.866 31.0003 14C31.0003 10.134 27.8663 7 24.0003 7ZM13.0003 14C13.0003 7.92487 17.9252 3 24.0003 3C30.0755 3 35.0003 7.92487 35.0003 14C35.0003 20.0751 30.0755 25 24.0003 25C17.9252 25 13.0003 20.0751 13.0003 14ZM24.0003 33C18.0615 33 13.0493 36.9841 11.4972 42.4262C11.3457 42.9573 10.8217 43.3088 10.2804 43.1989L8.32038 42.8011C7.77914 42.6912 7.4266 42.1618 7.5683 41.628C9.49821 34.358 16.1215 29 24.0003 29C31.8792 29 38.5025 34.358 40.4324 41.628C40.5741 42.1618 40.2215 42.6912 39.6803 42.8011L37.7203 43.1989C37.179 43.3088 36.6549 42.9573 36.5035 42.4262C34.9514 36.9841 29.9391 33 24.0003 33Z"
+        ></path>
+    </svg>
+);
+
+export const Music = ({ width = '1.6rem', height = '1.6rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 48 48"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M35.0001 10.7587C35.0001 10.1169 34.4041 9.64129 33.7784 9.78359L17.7902 13.4192C17.335 13.5227 17.0119 13.9275 17.0119 14.3943V37.9972H17.0109C17.0374 40.1644 14.8022 42.4189 11.612 43.2737C8.05093 44.2279 4.64847 43.0769 4.01236 40.7028C3.37624 38.3288 5.74735 35.6308 9.30838 34.6766C10.606 34.3289 11.8826 34.2608 13.0119 34.4294V14.3943C13.0119 12.0601 14.6271 10.0364 16.9033 9.5188L32.8914 5.88317C36.0204 5.17165 39.0001 7.54986 39.0001 10.7587V33.1191C39.084 35.3108 36.8331 37.6109 33.6032 38.4763C30.0421 39.4305 26.6397 38.2795 26.0036 35.9055C25.3675 33.5315 27.7386 30.8334 31.2996 29.8792C32.5961 29.5319 33.8715 29.4635 35.0001 29.6316V10.7587Z"
+        ></path>
+    </svg>
+);
+
+export const Hashtag = ({ width = '1.6rem', height = '1.6rem', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 48 48"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M16.4263 15L16.9566 3.95205C16.9822 3.41902 17.4218 2.99999 17.9554 2.99999H19.9494C20.5202 2.99999 20.9752 3.47701 20.9483 4.04718L20.4308 15H28.4263L28.9566 3.95205C28.9822 3.41902 29.4218 2.99999 29.9554 2.99999H31.9494C32.5202 2.99999 32.9752 3.47701 32.9483 4.04718L32.4308 15H43C43.5523 15 44 15.4477 44 16V18C44 18.5523 43.5523 19 43 19H32.2404L31.8118 28H42C42.5523 28 43 28.4477 43 29V31C43 31.5523 42.5523 32 42 32H31.6213L31.0434 44.0479C31.0178 44.581 30.5782 45 30.0446 45H28.0507C27.4798 45 27.0248 44.523 27.0518 43.9528L27.6168 32H19.6213L19.0434 44.0479C19.0178 44.581 18.5782 45 18.0446 45H16.0507C15.4798 45 15.0248 44.523 15.0518 43.9528L15.6168 32H5C4.44772 32 4 31.5523 4 31V29C4 28.4477 4.44772 28 5 28H15.8073L16.2358 19H6C5.44772 19 5 18.5523 5 18V16C5 15.4477 5.44772 15 6 15H16.4263ZM20.2404 19L19.8118 28H27.8073L28.2358 19H20.2404Z"
+        ></path>
+    </svg>
+);
+
+export const Heart = ({ width = '2.4rem', height = '2.4rem', className }) => (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width={width} height={height}>
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M7.5 2.25C10.5 2.25 12 4.25 12 4.25C12 4.25 13.5 2.25 16.5 2.25C20 2.25 22.5 4.99999 22.5 8.5C22.5 12.5 19.2311 16.0657 16.25 18.75C14.4095 20.4072 13 21.5 12 21.5C11 21.5 9.55051 20.3989 7.75 18.75C4.81949 16.0662 1.5 12.5 1.5 8.5C1.5 4.99999 4 2.25 7.5 2.25Z"
+            fill="currentColor"
+        ></path>
+    </svg>
+);
+
+export const Message = ({ width = '2.4rem', height = '2.4rem', className }) => (
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width={width} height={height}>
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M16.0393 14.7137C17.75 13 18.75 11.215 18.75 9.13662C18.75 4.91897 14.8887 1.49997 10.125 1.49997C5.36129 1.49997 1.5 4.91897 1.5 9.13675C1.5 13.3545 5.48622 16.25 10.25 16.25V17.6487C10.25 18.0919 10.7095 18.3771 11.0992 18.1659C12.3166 17.5062 14.5725 16.183 16.0393 14.7137ZM5.93527 8.10679C6.61608 8.10679 7.16797 8.65471 7.16797 9.32962C7.16797 10.0059 6.61608 10.5538 5.93527 10.5538C5.2556 10.5538 4.70368 10.0059 4.70368 9.32962C4.70368 8.65471 5.2556 8.10679 5.93527 8.10679ZM11.3572 9.32962C11.3572 8.65471 10.8055 8.10679 10.125 8.10679C9.44459 8.10679 8.89289 8.65471 8.89289 9.32962C8.89292 10.0059 9.44462 10.5538 10.125 10.5538C10.8055 10.5538 11.3572 10.0059 11.3572 9.32962ZM14.3146 8.10679C14.9953 8.10679 15.5464 8.65471 15.5464 9.32962C15.5464 10.0059 14.9953 10.5538 14.3146 10.5538C13.6339 10.5538 13.082 10.0059 13.0821 9.32962C13.0821 8.65471 13.6339 8.10679 14.3146 8.10679Z"
+        ></path>
+    </svg>
+);
+
+export const ShareIcon = ({ width = '2.4rem', height = '2.4srem', className }) => (
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width={width} height={height}>
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M10.9376 3.17495C10.9376 2.58272 11.6469 2.27873 12.0758 2.68715L18.6021 8.90241C19.1764 9.44937 19.1564 10.3717 18.5588 10.8931L12.0541 16.5689C11.6184 16.9491 10.9376 16.6397 10.9376 16.0614V13.4894C10.9376 13.4894 3.95344 12.2312 1.7131 16.3434C1.50423 16.7268 0.690072 16.8609 0.855563 14.948C1.54761 11.4273 2.96196 5.93084 10.9376 5.93084V3.17495Z"
+            fill="currentColor"
         ></path>
     </svg>
 );

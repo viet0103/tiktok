@@ -37,6 +37,7 @@ function Menu({ items, children }) {
     };
     return (
         <Tippy
+            arrow
             hideOnClick={false}
             delay={[100, 200]}
             onHide={resetMenu}

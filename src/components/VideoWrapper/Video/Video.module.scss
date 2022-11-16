@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: calc(450px + (100vw - 768px) / 1152 * 100);
+    
+    align-items: flex-end;
+}
+
+.video {
+    height: 100%;
+    width: 46%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.social {
+   margin-left: 10px;
+}
