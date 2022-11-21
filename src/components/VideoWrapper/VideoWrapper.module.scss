@@ -12,52 +12,51 @@
             border-radius: 8px;
             cursor: default;
         }
-        
+
         .preview-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .preview-btn {
             margin-right: 0px;
         }
-        
-        
+
         .preview-body {
             margin-top: 12px;
             border-bottom: 1px solid rgba(24, 24, 35, 0.15);
         }
-        
+
         .preview-nickname {
             font-weight: 700;
             font-size: 1.8rem;
             line-height: 24px;
         }
-        
+
         .preview-fullname {
-        
             font-weight: 600;
             font-size: 1.6rem;
             line-height: 20px;
             margin-top: 1px;
         }
-        
+
         .preview-hot {
             display: inline-block;
             font-size: 1.7rem;
             line-height: 20px;
             margin-top: 12px;
             margin-bottom: 15px;
-            
         }
-        
-        .num-follow, .num-like  {
+
+        .num-follow,
+        .num-like {
             font-weight: 700;
             margin-right: 6px;
         }
-        
-        .follow,.like {
+
+        .follow,
+        .like {
             color: rgba(22, 24, 35, 0.75);
         }
         .follow {
@@ -74,12 +73,11 @@
         .user-avatar {
             width: 56px;
             height: 56px;
+            cursor: pointer;
         }
         .user-info-text {
             flex: 1;
-            margin-left: 14px;
-            margin-top: 5px;
-
+            margin: 5px 15px 0 14px;
             .user-name {
                 display: flex;
                 align-items: center;
@@ -93,19 +91,17 @@
                     cursor: pointer;
                     text-decoration: underline;
                 }
-                
             }
-
 
             .user-fullname {
                 font-weight: 400;
                 font-size: 1.4rem;
-               cursor: default;
+                cursor: default;
             }
 
             .video-des {
-                
-               
+                font-size: 1.6rem;
+                line-height: 22px;
             }
 
             .video-music {
@@ -114,7 +110,8 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 22px;
-               
+                margin: 3px 0;
+
                 .video-music-src {
                     margin-left: 3px;
                     &:hover {
@@ -123,23 +120,23 @@
                     }
                 }
             }
-
-            
         }
     }
-    .btn { 
+    .btn {
         margin-top: 10px;
     }
 
     .video {
-        
-        margin-top: 10px;
+        margin-top: 3px;
         margin-left: 70px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
+    
+
     .social-list {
-        
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -150,7 +147,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            
+            cursor: pointer;
         }
 
         .social-item + .social-item {
@@ -168,17 +165,66 @@
             justify-content: space-between;
             justify-content: center;
             align-items: center;
-            background-color: rgba(22, 24, 35, .06);
-
+            background-color: rgba(22, 24, 35, 0.06);
         }
         .social-quantity {
             font-weight: 700;
             margin-top: 2px;
+            user-select: none;
         }
-       
+        align-self: flex-end;
     }
 }
 
+.share-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 280px;
+    width: 280px;
+    overflow: hidden;
+}
 
+.share-list {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    width: 280px;
+    padding: 8px 0px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.share-item {
+    display: flex;
+    align-items: center;
+    padding: 11px 16px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.share-item-des {
+    margin-left: 12px;
+}
+
+.show-share-btn {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+}
 
 

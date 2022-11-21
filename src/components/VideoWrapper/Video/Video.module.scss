@@ -1,18 +1,115 @@
 .wrapper {
+    position: relative;
     display: flex;
     justify-content: flex-start;
-    height: calc(450px + (100vw - 768px) / 1152 * 100);
-    
+    width: calc((450px + (100vw - 768px) / 1501 * 100)*(9/16));
+    height: calc(450px + (100vw - 768px) / 1501 * 100);
     align-items: flex-end;
+}
+
+.wrapper:hover .control-muted {
+   opacity: 1;
+}
+.wrapper:hover .control-play {
+    opacity: 1;
+
+}
+.wrapper:hover .report {
+    opacity: 1;
+
+}
+
+.play-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video {
     height: 100%;
-    width: 46%;
+    width: 100%;
     border-radius: 8px;
     object-fit: cover;
+    cursor: pointer;
 }
+
+.control-play {
+    display: flex;
+    position: absolute;
+    bottom: 27px;
+    left: 20px;
+    opacity: 0;
+    transition: opacity ease-in-out 600ms;
+    cursor: pointer;
+}
+
+.report {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0;
+    transition: opacity ease-in-out 600ms;
+    cursor: pointer;
+}
+
+.report-icon {
+    margin-right: 4px;
+    transform: translateY(-2px);
+}
+.input-wrapper {
+    padding: 9px;
+    display: flex;
+    height: 24px;
+    width: 76px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 24, 35, 0.34);
+    border-radius: 90px;
+    transform: translateX(10px);
+    display: none;
+}
+
+.muted-icon {
+    display: flex;
+}
+
+
+
+
+.control-muted:hover {
+    rotate: -90deg;
+    transform: translate(36%, 156%);
+}
+
+.control-muted:hover .muted-icon {
+    rotate: 90deg;
+}
+
+.control-muted:hover .input-wrapper {
+    display: flex;
+}
+
+.control-muted { 
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+    padding: 0 2px;
+    display: flex;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity ease-in-out 600ms;
+    
+}
+
 
 .social {
    margin-left: 10px;
 }
+

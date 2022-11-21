@@ -15,7 +15,7 @@ SideBar.propTypes = {
     
 };
 
-function SideBar() {
+function SideBar({isSignIn}) {
     
     return (
         <div className={cx('wrapper')}>
@@ -35,6 +35,11 @@ function SideBar() {
                         <Button className={cx('menu-item', 'active-icon')} leftIcon={LiveActiveIcon} noneOutline><h2>Live</h2></Button>
                     </NavLink>
             </nav>
+
+            {isSignIn && <div className={cx('sign-in')}>
+                <p className={cx('log-in-des')}>Log in to follow creators, like videos, and view comments.</p>
+                <Button outline className={cx('log-in-btn')}>Log in</Button>
+                </div>}
             <SideBarAccounts label='Suggestted accounts' />
             <SideBarAccounts label='Following accounts' />
 

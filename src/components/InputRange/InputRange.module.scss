@@ -1,0 +1,104 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+  .input {
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    height: 3px;
+    z-index: 3;
+  }
+  
+  .input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  .input:focus {
+    outline: none; 
+  }
+  
+  .input::-ms-track {
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  .input::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin-top: -4px;
+    background: #fff;
+  }
+  
+  .input::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin-top: -5px;
+    background: #fff;
+  }
+  
+  .input::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin-top: -5px;
+    background: #fff;
+  }
+  
+  .input::-webkit-slider-runnable-track {
+    border-radius: 90px;
+    height: 3px;
+  }
+  
+  .input::-moz-range-track {
+    border-radius: 90px;
+    height: 3px;
+  }
+  
+  .input::-ms-track {
+    border-radius: 90px;
+    height: 3px;
+  }
+  
+  .progress-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3px;
+    border-radius: 90px;
+    overflow: hidden;
+  }
+  
+  .track {
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    flex: 1;
+  }
+  
+  .thumb-wrap {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #857f7f;
+    
+  }
+  .thumb {
+    position: relative;
+    height: 100%;
+    width: 1px;
+  }

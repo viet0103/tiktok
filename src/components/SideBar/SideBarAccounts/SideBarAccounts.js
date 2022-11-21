@@ -28,7 +28,7 @@ function SidebarAccounts({ label }) {
         <div className={cx('wrapper')}>
             <header className={cx('header')}>{label}</header>
             <div className={cx('body', { show })}>
-                {accounts.map((account, index) =>
+                {accounts.map((account) =>
                     label.toLowerCase().includes('suggest') ? (
                         <div  key={account.id}>
                             <Tippy

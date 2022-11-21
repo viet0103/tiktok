@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import * as services from '~/services/videoService'
 
 function Home() {
+    
     const [videos, setVideos] = useState([]);
     useEffect(() => {
         const fetchApi = async () => {
@@ -12,11 +13,11 @@ function Home() {
             setVideos(result)
         }
         fetchApi();
-    },[videos])
+    },[])
     return (
-        <div className='wrapper'>
+        <div className='wrapper' >
             {videos.map((video) => (
-                <VideoWrapper data={video}/>
+                <VideoWrapper key={video.id} data={video}/>
             ))}
         </div>
     );

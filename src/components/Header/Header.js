@@ -33,262 +33,55 @@ const MENU_ITEM = [
         children: {
             title: 'Languages',
             data: [
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
-                {
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },{
-                    name: 'English',
-                    children: {
-                        title: 'English',
-                        data: [
-                            {
-                                name: 'English (UK)',
-                            },
-                            {
-                                name: 'English (USA)',
-                            },
-                        ],
-                    },
-                },
-                {
-                    name: 'Việt nam',
-                },
                 
-                
+                { name: 'বাঙ্গালি (ভারত)' },
+                { name: 'العربية' },
+                { name: 'Cebuano (Pilipinas)' },
+                { name: 'Čeština (Česká republika)' },
+                { name: 'Deutsch' },
+                { name: 'Ελληνικά (Ελλάδα)' },
+                {
+                    name: 'English',
+                    children: {
+                        title: 'English',
+                        data: [
+                            {
+                                name: 'United Kingdom',
+                            },
+                            {
+                                name: 'The United States of America',
+                            },
+                        ],
+                    },
+                },
+                { name: 'Español' },
+                { name: 'Suomi (Suomi)' },
+                { name: 'Filipino (Pilipinas)' },
+                { name: 'Français' },
+                { name: 'עברית (ישראל)' },
+                { name: 'हिंदी' },
+                { name: 'Magyar (Magyarország)' },
+                { name: 'Bahasa Indonesia (Indonesia)' },
+                { name: 'Italiano (Italia)' },
+                { name: '日本語（日本）' },
+                { name: 'Basa Jawa (Indonesia)' },
+                { name: 'ខ្មែរ (កម្ពុជា)' },
+                { name: '한국어 (대한민국)' },
+                { name: 'Bahasa Melayu (Malaysia)' },
+                { name: 'မြန်မာ (မြန်မာ)' },
+                { name: 'Nederlands (Nederland)' },
+                { name: 'Polski (Polska)' },
+                { name: 'Português (Brasil)' },
+                { name: 'Română (Romania)' },
+                { name: 'Русский (Россия)' },
+                { name: 'Svenska (Sverige)' },
+                { name: 'ไทย (ไทย)' },
+                { name: 'Türkçe (Türkiye)' },
+                { name: 'Українська (Україна)' },
+                { name: 'اردو' },
+                { name: 'Tiếng Việt (Việt Nam)' },
+                { name: '简体中文' },
+                { name: '繁體中文' },
             ],
         },
     },
@@ -328,23 +121,19 @@ const MENU_ITEM_SIGN_IN = [
     },
 ];
 
-function Header({isSignIn}) {
-   
-    
+function Header({ isSignIn }) {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <Link to={'/'} className={cx('logo')}>
-                    <img src={images.logo} alt='' />
+                    <img src={images.logo} alt="" />
                 </Link>
                 <Search />
 
                 <div className={cx('action')}>
                     {isSignIn ? (
                         <>
-                            <Button leftIcon={Plus} >
-                                Upload
-                            </Button>
+                            <Button leftIcon={Plus}>Upload</Button>
                             <Tippy delay={[0, 25]} placement="bottom" content="Upload video">
                                 <button className={cx('action-btn', 'upload-btn')}>
                                     <UploadIcon />
@@ -363,11 +152,11 @@ function Header({isSignIn}) {
                         </>
                     ) : (
                         <>
-                            <Button  leftIcon={Plus}>
-                                Upload
-                            </Button>
+                            <Button leftIcon={Plus}>Upload</Button>
 
-                            <Button primary to={'/'}>Log in</Button>
+                            <Button primary to={'/'}>
+                                Log in
+                            </Button>
                         </>
                     )}
                     <Menu items={isSignIn ? MENU_ITEM_SIGN_IN : MENU_ITEM}>
@@ -378,12 +167,13 @@ function Header({isSignIn}) {
                                     src={
                                         'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/f89b316574f8f0ab300e20d4b7ff6a29~c5_100x100.jpeg?x-expires=1666242000&x-signature=fFhH75Scg3p1EpOFbo3SDMVh7WY%3D'
                                     }
-
                                     alt="Gumball waterson"
-                                    
                                 />
                             ) : (
-                                <FontAwesomeIcon className={cx('icon-more')} icon={faEllipsisVertical}></FontAwesomeIcon>
+                                <FontAwesomeIcon
+                                    className={cx('icon-more')}
+                                    icon={faEllipsisVertical}
+                                ></FontAwesomeIcon>
                             )}
                         </div>
                     </Menu>
