@@ -1,0 +1,104 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .closed-btn {
+        min-width: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.04);
+        color: #eaeaea;
+        span {
+            margin: 0;
+        }
+    }
+}
+
+.closed-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 18px 18px 18px 0;
+}
+
+.form-wrapper {
+    position: relative;
+    margin: auto;
+    max-height: 693px;
+    height: 80%;
+    width: 483px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(37, 37, 37);
+}
+
+.header-wrapper {
+    flex: 1;
+}
+
+.header-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 16px 0;
+}
+
+.login-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 368px;
+    overflow: auto;
+    &::-webkit-scrollbar-thumb {
+        background: rgb(46, 46, 46);
+    }
+}
+
+.login-item-btn {
+    background-color: rgb(46, 46, 46);
+    width: 375px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 16px;
+    height: 44px;
+    justify-content: flex-start;
+    span {
+        flex: 1;
+        margin: 0;
+    }
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #eaeaea;
+    }
+}
+
+.footer-login {
+    height: 64px;
+    font-size: 1.5rem;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eaeaea;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}

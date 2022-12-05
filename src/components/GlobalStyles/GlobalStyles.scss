@@ -16,9 +16,9 @@
 }
 
 html {
-    font-size: 62.5%;
-    
+    font-size: 62.5%;   
 }
+
 body {
     overflow-y: overlay;
 }
@@ -31,6 +31,7 @@ html *::-webkit-scrollbar {
 html *::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.08);
+    
 }
 
 html *::-webkit-scrollbar-track {
@@ -44,6 +45,8 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
 }
+
+
 
 
 

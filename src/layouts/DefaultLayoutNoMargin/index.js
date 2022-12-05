@@ -1,11 +1,11 @@
 import classNames from 'classnames/bind';
-import styles from './DefaultLayout.module.scss';
+import styles from './DefaultLayoutNoMargin.module.scss';
 import Header from '~/components/Header';
 import SideBar from '~/components/SideBar';
 
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children, isSignIn}) {
+function DefaultLayoutNoMargin({ children, isSignIn}) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header-wrapper')}>
@@ -21,4 +21,4 @@ function DefaultLayout({ children, isSignIn}) {
     );
 }
 
-export default DefaultLayout;
+export default DefaultLayoutNoMargin;

@@ -4,7 +4,7 @@
     margin: 0 50px;
     border-bottom: 1px solid #e9e9eb;
     .video-info {
-        .preview-wrpaper {
+        .preview-wrapper {
             width: 320px;
             padding: 20px;
             background-color: rgb(255, 255, 255);
@@ -47,6 +47,7 @@
             line-height: 20px;
             margin-top: 12px;
             margin-bottom: 15px;
+            cursor: text;
         }
 
         .num-follow,
@@ -67,6 +68,8 @@
             line-height: 20px;
             margin-top: 12px;
             color: rgba(22, 24, 35, 1);
+            cursor: text;
+
         }
         display: flex;
         justify-content: space-between;

@@ -7,6 +7,8 @@ import Tippy from '@tippyjs/react';
 import Button from '~/components/Button';
 import { Link } from 'react-router-dom';
 
+import React from 'react';
+
 import Menu from '~/components/Menu';
 import 'tippy.js/dist/tippy.css';
 import Image from '~/components/Images';
@@ -24,11 +26,12 @@ import {
     UserPersonal,
 } from '~/components/Icons';
 import Search from '~/components/Search';
+import FormLogin from '../FormLogin';
 
 const cx = classNames.bind(styles);
 const MENU_ITEM = [
     {
-        icon: LanguageIcon,
+        icon: <LanguageIcon />,
         name: 'Languages',
         children: {
             title: 'Languages',
@@ -86,44 +89,44 @@ const MENU_ITEM = [
         },
     },
     {
-        icon: FeedbackIcon,
+        icon: <FeedbackIcon />,
         name: 'Feedback and help',
         to: '/feedback',
     },
     {
-        icon: KeyboardIcon,
+        icon: <KeyboardIcon />,
         name: 'Keyboard shortcuts',
     },
 ];
 
 const MENU_ITEM_SIGN_IN = [
     {
-        icon: UserPersonal,
+        icon: <UserPersonal />,
         name: 'View profile',
         to: '/profile',
     },
     {
-        icon: CoinIcon,
+        icon: <CoinIcon />,
         name: 'Getting coins',
         to: '/getcoin',
     },
     {
-        icon: SettingIcon,
+        icon: <SettingIcon />,
         name: 'Settings',
         to: '/setting',
     },
     ...MENU_ITEM,
     {
-        icon: SignOutIcon,
+        icon: <SignOutIcon />,
         name: 'Log out',
         to: '/setting',
         separate: true,
     },
 ];
 
-function Header({ isSignIn }) {
+function Header({className, isSignIn }) {
     return (
-        <header className={cx('wrapper')}>
+        <header className={cx('wrapper',className)}>
             <div className={cx('inner')}>
                 <Link to={'/'} className={cx('logo')}>
                     <img src={images.logo} alt="" />
@@ -133,7 +136,7 @@ function Header({ isSignIn }) {
                 <div className={cx('action')}>
                     {isSignIn ? (
                         <>
-                            <Button leftIcon={Plus}>Upload</Button>
+                            <Button leftIcon={<Plus />}>Upload</Button>
                             <Tippy delay={[0, 25]} placement="bottom" content="Upload video">
                                 <button className={cx('action-btn', 'upload-btn')}>
                                     <UploadIcon />
@@ -152,9 +155,12 @@ function Header({ isSignIn }) {
                         </>
                     ) : (
                         <>
-                            <Button leftIcon={Plus}>Upload</Button>
+                            <Button leftIcon={<Plus />}>Upload</Button>
 
-                            <Button primary to={'/'}>
+                            <Button primary onClick={() => {
+                            
+                                
+                            }}>
                                 Log in
                             </Button>
                         </>
