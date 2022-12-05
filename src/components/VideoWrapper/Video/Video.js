@@ -59,7 +59,7 @@ function Video({ src, children }) {
     useEffect(() => {
        
         if (play) {
-            videoRef.current.load();
+            videoRef.current.currentTime = 0;
             videoRef.current.play();
             
         } else {

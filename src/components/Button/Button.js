@@ -24,8 +24,6 @@ function Button({
     ...passProps
 }) {
     let Comp = 'button';
-    let LeftIcon = leftIcon;
-    let RightIcon = rightIcon;
     const props = {
         onClick,
         ...passProps,
@@ -63,12 +61,12 @@ function Button({
             {...props}
         >
             
-            {LeftIcon && <div className={cx('leftIcon')}>
-                <LeftIcon className={cx('leftIcon')} />
+            {leftIcon && <div className={cx('leftIcon')}>
+                {leftIcon}
             </div>}
             <span>{children}</span>
-            {RightIcon && <div className={cx('rightIcon')}>
-                <RightIcon className={cx('rightIcon')}/>
+            {rightIcon && <div className={cx('rightIcon')}>
+                {rightIcon}
             </div >}
         </Comp>
     );
@@ -82,7 +80,7 @@ Button.propTypes = {
     disabled: PropTypes.bool,
     rounded: PropTypes.bool,
     noneOutline: PropTypes.bool,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     leftIcon: PropTypes.oneOfType([
         PropTypes.node, PropTypes.elementType
     ]),

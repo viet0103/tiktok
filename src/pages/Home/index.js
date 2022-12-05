@@ -1,5 +1,7 @@
 import VideoWrapper from '~/components/VideoWrapper';
 import { useEffect, useState } from 'react';
+import classNames from 'classnames/bind';
+
 
 import * as services from '~/services/videoService'
 
@@ -15,7 +17,7 @@ function Home() {
         fetchApi();
     },[])
     return (
-        <div className='wrapper' >
+        <div className={classNames('wrapper')} >
             {videos.map((video) => (
                 <VideoWrapper key={video.id} data={video}/>
             ))}
